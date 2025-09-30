@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scholars Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="scholar.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="Screenshot_20250930-220804_WhatsApp.jpg" alt="Logo" />
+      <span>Scholars Connect</span>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#" tabindex="0">Home</a>
+      <a href="#" tabindex="0">About</a>
+      <a href="#" tabindex="0">Contacts</a>
+    </div>
+  </nav>
+
+  <div id="buttons-container" role="tablist" aria-label="Scholarship site sections">
+    <button class="section-btn" onclick="showSection('scholarships')" role="tab" aria-selected="false" aria-controls="scholarships">Active Scholarships and Deadlines</button>
+    <button class="section-btn" onclick="showSection('group-members')" role="tab" aria-selected="false" aria-controls="group-members">Group Members</button>
+    <button class="section-btn" onclick="showSection('awarded-students')" role="tab" aria-selected="false" aria-controls="awarded-students">Awarded Students</button>
+  </div>
+
+  <section id="scholarships" role="tabpanel" tabindex="0" aria-hidden="true">
+    <h2>Active Scholarships and Deadlines</h2>
+    <p>List and deadlines of currently available scholarships will appear here.</p>
+    <ul>
+      <li><strong>ABC Foundation Scholarship</strong> - Deadline: October 15, 2025</li>
+      <li><strong>Global Scholars Grant</strong> - Deadline: November 1, 2025</li>
+    </ul>
+  </section>
+
+  <section id="group-members" role="tabpanel" tabindex="0" aria-hidden="true">
+    <h2>Group Members</h2>
+    <p>Meet the people behind Scholars Connect.</p>
+    <ul>
+      <li>John Doe - Coordinator</li>
+      <li>Mary Smith - Content Manager</li>
+      <li>Ali Yusuf - Technical Lead</li>
+    </ul>
+  </section>
+
+  <section id="awarded-students" role="tabpanel" tabindex="0" aria-hidden="true">
+    <h2>Awarded Students</h2>
+    <p>Students who have successfully received scholarships.</p>
+    <ul>
+      <li>Jane Doe - ABC Foundation Scholarship, 2025</li>
+      <li>Kwame Mensah - Global Scholars Grant, 2025</li>
+    </ul>
+  </section>
+
+  <script src="scholar.js"></script>
+
+</body>
+</html>
